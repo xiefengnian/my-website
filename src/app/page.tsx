@@ -9,9 +9,7 @@ export default function Home() {
         <h1>My Website</h1>
         <ul>
           <li>
-            <a>
-              <Link href={"/posts"}>posts</Link>
-            </a>
+            <Link href={"/posts"}>posts</Link>
           </li>
         </ul>
       </nav>

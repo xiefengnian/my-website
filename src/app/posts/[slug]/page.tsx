@@ -1,4 +1,4 @@
-import { getPostDetail } from "@/lib/post";
+import { getPostDetail } from "@/app/posts/utils";
 import Link from "next/link";
 import { Suspense } from "react";
 
