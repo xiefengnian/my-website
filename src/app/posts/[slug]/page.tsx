@@ -10,9 +10,10 @@ const PostDetail = async ({ slug }: { slug: string }) => {
 const Post: React.FC<{ params: { slug: string } }> = ({ params }) => {
   return (
     <div>
-      <button>
-        <Link href={"/posts"}>back</Link>
-      </button>
+      <Link href={"/posts"}>
+        <button>back</button>
+      </Link>
+
       <Suspense fallback={"loading..."}>
         <PostDetail slug={params.slug} />
       </Suspense>

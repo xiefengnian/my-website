@@ -16,9 +16,9 @@ export default async function Posts({
   const posts = await getPosts();
   return (
     <div>
-      <button>
-        <Link href={"/"}>back</Link>
-      </button>
+      <Link href={"/"}>
+        <button>back</button>
+      </Link>
       <ul>
         {posts.map((item) => {
           return (
