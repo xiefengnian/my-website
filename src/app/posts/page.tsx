@@ -3,6 +3,7 @@ import { listPosts } from "./listPosts";
 import Link from "next/link";
 import { readFileSync, readdirSync } from "fs";
 import path from "path";
+import { Counter } from "./components/Counter";
 
 const getPosts = cache(async () => {
   return await listPosts();
@@ -14,6 +15,7 @@ export default async function Posts({
   params: { list: string[] };
 }) {
   const posts = await getPosts();
+
   return (
     <div>
       <Link href={"/"}>

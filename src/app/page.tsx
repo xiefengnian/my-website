@@ -7,9 +7,13 @@ export default function Home() {
     <main className={styles.main}>
       <nav>
         <h1>My Website</h1>
+        <span className={styles.description}>Some Next.js based demos</span>
         <ul>
           <li>
             <Link href={"/posts"}>posts</Link>
+          </li>
+          <li>
+            <Link href={"/antd"}>antd demos</Link>
           </li>
         </ul>
       </nav>
